@@ -3,6 +3,8 @@ module Main(
 , addOne
 ) where
 
-import Calculator(addOne)
+import Calculator(addOne, third)
 
-main = print( addOne(2) )
+main = do
+  print( addOne(2) )
+  print( third(('q','w','e')) )
