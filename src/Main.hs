@@ -1,3 +1,8 @@
-module Main where
+module Main(
+  main
+, addOne
+) where
 
-main = print "Hello"
+import Calculator(addOne)
+
+main = print( addOne(2) )
