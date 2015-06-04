@@ -2,7 +2,7 @@
 -- further documentation, see http://haskell.org/cabal/users-guide/
 
 -- The name of the package.
-name:                haskell_js_interpreter
+name:                HaskellJsInterpreter
 
 -- The package version.  See the Haskell package versioning policy (PVP) 
 -- for standards guiding when and how versions should be incremented.
@@ -13,13 +13,10 @@ name:                haskell_js_interpreter
 version:             0.1.0.0
 
 -- A short (one-line) description of the package.
-synopsis:            a simple JavaScript interpreterOF
+-- synopsis:            
 
 -- A longer description of the package.
 -- description:         
-
--- URL for the project homepage or repository.
-homepage:            https://github.com/ralekna/haskell_js_interpreter
 
 -- The license under which the package is released.
 license:             MIT
@@ -32,7 +29,7 @@ author:              Rytis Alekna
 
 -- An email address to which users can send suggestions, bug reports, and 
 -- patches.
-maintainer:          r.alekna@gmail.com
+-- maintainer:          
 
 -- A copyright notice.
 -- copyright:           
@@ -45,12 +42,15 @@ build-type:          Simple
 cabal-version:       >=1.8
 
 
-executable           haskell_js_interpreter
+executable haskell_js_interpreter
   -- .hs or .lhs file containing the Main module.
-  main-is:             src/Main.hs
+  main-is: Main.hs
   
   -- Modules included in this executable, other than Main.
   -- other-modules:       
   
   -- Other library packages from which modules are imported.
   build-depends:       base ==4.6.*
+  
+  -- Directories containing source files.
+  hs-source-dirs:      src
