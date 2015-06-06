@@ -50,7 +50,7 @@ executable haskell_js_interpreter
   -- other-modules:       
   
   -- Other library packages from which modules are imported.
-  build-depends:       base ==4.6.*
+  build-depends:       base ==4.7.*
   
   -- Directories containing source files.
   hs-source-dirs:      src

@@ -3,6 +3,8 @@ module Calculator(
 , mult
 , third
 , takeOne
+, (***)
+, matchWholeList
 ) where
 
 -- (Num x) declares that x Type belongs to Num typeclass
@@ -17,3 +19,11 @@ third (_,_,c) = c
 
 takeOne :: (Show a) => [a] -> Int -> a
 takeOne list index = list !! index
+
+param1 *** param2 = (show param1) ++ " times " ++ (show param2)
+
+-- matchWholeList :: (Char a) => (a:[a]) -> [a]
+matchWholeList (x:[y])
+  | x == 'l' && y == 'a' = "Labas"
+  | x == 'a' && y == 't' = "Ate"
+  | otherwise = "Bye"
