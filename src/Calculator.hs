@@ -22,8 +22,8 @@ takeOne list index = list !! index
 
 param1 *** param2 = (show param1) ++ " times " ++ (show param2)
 
--- matchWholeList :: (Char a) => (a:[a]) -> [a]
-matchWholeList (x:[y])
+matchWholeList :: [Char] -> [Char]
+matchWholeList list@(x:y:_)
   | x == 'l' && y == 'a' = "Labas"
   | x == 'a' && y == 't' = "Ate"
   | otherwise = "Bye"

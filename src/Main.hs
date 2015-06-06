@@ -13,4 +13,5 @@ main = do
 --  matchWholeList 'a':'t':[]
   print( matchWholeList "la" )
   print( matchWholeList "at" )
+  print( matchWholeList "hell" )
   -- don't forget that main can return only IO!
