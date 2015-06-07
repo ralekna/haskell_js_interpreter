@@ -3,7 +3,7 @@ module Main(
 ) where
 
 import Calculator(addOne, third, takeOne, (***), matchWholeList)
-import Js.Parser(reverseList)
+import Js.Parser(reverseList, extractFirstWord, splitOnFirstWord)
 
 main = do
   print( addOne(2) )
@@ -16,4 +16,8 @@ main = do
   print( matchWholeList "at" )
   print( matchWholeList "hell" )
   print( reverseList "Rytis" )
+  print( extractFirstWord "one two" ' ' )
+  print( splitOnFirstWord "vienas du trys" ' ' )
+  print( splitOnFirstWord [2,3,4,5,0,1,6,4] 0 )
   -- don't forget that main can return only IO!
+
